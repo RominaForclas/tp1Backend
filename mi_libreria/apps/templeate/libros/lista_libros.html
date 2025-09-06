@@ -6,18 +6,20 @@
 </head>
 <body>
   <h1>Libros</h1>
-  {% if libros %}
+  
     <ul>
-      {% for libro in libros %}
-        <li>
-          <strong>{{ libro.titulo }}</strong> — {{ libro.autor.nombre }}<br>
-          Publicado: {{ libro.fecha_publicacion }} — {{ libro.paginas }} páginas<br>
-          {{ libro.descripcion }}
-        </li>
-      {% endfor %}
+      
+        
+      <li><strong>aca va el nombre del libro</strong></li>
+      <li><strong>aca va el autor</strong></li>
+      <li><strong>fecha de publicacion</strong></li>
+      <li><strong>descripcion</strong></li>
+          
+      
+      
     </ul>
-  {% else %}
+  
     <p>No hay libros aún.</p>
-  {% endif %}
+  
 </body>
 </html>
