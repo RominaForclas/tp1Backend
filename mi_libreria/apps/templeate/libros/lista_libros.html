@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Lista de libros</title>
+</head>
+<body>
+  <h1>Libros</h1>
+  {% if libros %}
+    <ul>
+      {% for libro in libros %}
+        <li>
+          <strong>{{ libro.titulo }}</strong> — {{ libro.autor.nombre }}<br>
+          Publicado: {{ libro.fecha_publicacion }} — {{ libro.paginas }} páginas<br>
+          {{ libro.descripcion }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No hay libros aún.</p>
+  {% endif %}
+</body>
+</html>
